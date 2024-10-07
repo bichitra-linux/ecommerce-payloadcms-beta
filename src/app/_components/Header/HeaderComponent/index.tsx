@@ -17,10 +17,7 @@ const HeaderComponent = ({ header }: { header: Header }) => {
 
   return (
     <nav
-      className={[
-        classes.header,
-        noHeaderFooterUrls.includes(pathname) && classes.hide,
-      ]
+      className={[classes.header, noHeaderFooterUrls.includes(pathname) && classes.hide]
         .filter(Boolean)
         .join(' ')}
     >
